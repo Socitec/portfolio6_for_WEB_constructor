@@ -1,0 +1,514 @@
+/* 共通スタイル */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 1.8em;
+  font-family: "Hiragino Sans",sans-serif;
+}
+li {
+  list-style: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+.container {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+/* クリアタグfloat解除 */
+.clear {
+  clear: left;
+}
+/* 背景z-index固定 */
+.background {
+  z-index: -10;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url(../image/background_1.jpg);
+  background-size: cover;
+}
+/* 見出し */
+.index {
+  margin: 60px auto 20px;
+}
+h2 {
+  display: inline-block;
+  padding: 13px 18px;
+  background-color: #305089;
+  box-shadow: 5px 5px #aeb5dc;
+  letter-spacing: 3px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+h3 {
+  margin: 10px;
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 25px;
+}
+h4 {
+  margin-top: 5px;
+  padding: 5px;
+  line-height: 25px;
+  text-decoration: underline;
+  font-size: 20px;
+}
+h5 {
+  margin-top: 5px;
+  padding: 5px;
+}
+/* ボックス*/
+.item {
+  padding: 15px;
+  width: 40%;
+  background-color: rgba(234, 246, 253, .8);
+  border: 2px solid #3b82c4;
+  border-radius: 10px;
+}
+/* ボタン */
+.button {
+  margin-top: 7vh;
+  padding: 15px 30px;
+  border-radius: 1em;
+  background-color: rgb(0, 172, 0);
+  letter-spacing: 4px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all .3s;
+}
+.contact button:active {
+  top: 10px;
+}
+/* 黄色アンダーライン */
+span.underline {
+  background: linear-gradient(transparent 60%, #f9e900 90%,transparent 90%);
+}
+.width100 {
+  width: 100%;
+}
+/* ボバーしたときに背景色と文字色変更 */
+.hoverChangeColor li:hover {
+  background: linear-gradient(#ddd 0%, #fff 100%);
+  color: #000;
+}
+.hoverChangeColor li {
+  transition: all .5s;
+}
+/* span文字を大きくする */
+.largeLetter {
+  letter-spacing: 3px;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+/* ヘッダー */
+.header {
+  z-index: 20;
+  position: fixed;
+  height: 65px;
+  background-color: rgba(34, 49, 52, .9);
+}
+.header .logo {
+  float: left;
+}
+.header .logo img {
+  float: left;
+  height: 65px;
+}
+.header .logoText {
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 65px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: #fff;
+}
+/* スクロール時メニュー消す・出現させる */
+.hide{
+  transform: translateY(-100%); /* 上に消えるようにする */
+}
+#scrollArea{
+  transition: .5s; /* スクロール時に一瞬で消えると物足りないので.hideの処理を0.5秒で行う */
+}
+.header .navList{
+  /* navの横並び */
+  display: flex;
+}
+.header .headerMenu {
+  float: right;
+}
+.header li{
+  padding: 0 17px;
+  line-height: 65px;
+  color: #fff;
+}
+/* ハンバーガーメニュー初期非表示 */
+.burgerButton {
+  display: none;
+}
+/*トップ移動ボタン */
+.topButton {
+  display: inline-block;
+  z-index: 10;
+  position: fixed;
+  right: 5%;
+  bottom: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, .3);
+}
+.topButton p {
+  color: #fff;
+}
+
+/* トップ画面 */
+.topview {
+  height: 100vh;
+  background-image: url(../image/topview_for_pc.jpg);
+  background-size: cover;
+}
+.topview .subtitle {
+  padding-top: 15vh;
+}
+.topview .subtitle p {
+  display: inline-block;
+  line-height: 42px;
+  letter-spacing: 3px;
+  color: #ab0f50;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 0px 0px 20px #fff;
+}
+.topview .top {
+  margin-top: 10vh;
+}
+.topview h1 {
+  display: inline-block;
+  padding:10px 20px;
+  box-shadow: 7px 7px #d7cebb ;
+  line-height: 50px;
+  background-color: #fcc9ac;
+  letter-spacing: 4px;
+  color: #4a387c;
+  font-size: 30px;
+  font-weight: bold;
+}
+.topview .limitedTime {
+  margin-top: 8vh;
+}
+.topview .limitedTime p {
+  display: inline-block;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, .8);
+  line-height: 38px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+}
+
+/* 悩み */
+.problem .problemBox {
+  display: flex;
+  justify-content: center;
+}
+.problem .thinking {
+  width: 20%;
+}
+.problem .problems {
+  width: 70%;
+}
+.problem .problems .item {
+  width: 90%;
+  margin: 10px auto;
+}
+.problem .problems p {
+  line-height: 27px;
+}
+
+/* 問題解決 */
+.solution .solutionView img {
+  width: 50%;
+}
+.solution .solutions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.solution .solutions h3 {
+  color: red;
+}
+.solution .solutions .item {
+  width: 30%;
+}
+
+/* プロフィール */
+.profile .toptext {
+  margin: 20px auto;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+.profile .profileBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile .profileImage {
+  width: 35%;
+}
+.profile .profileImage img {
+  border-radius: 50%;
+}
+.profile .profileItems {
+  width: 60%;
+}
+.profile .hobby {
+  margin-top: 20px;
+}
+.profile .hobby li {
+  padding: 5px;
+  line-height: 30px;
+}
+.profile .history {
+  margin-top: 20px;
+}
+.profile .history table {
+  margin: 0 auto;
+  word-wrap: break-word;
+  vertical-align: middle;
+}
+.profile .history td {
+  padding: 5px 10px;
+  line-height: 35px;
+  border: 2px solid rgb(128, 128, 128);
+}
+.profile .history .school {
+  width: 15%;
+}
+.profile .history .place {
+  width: 10%;
+}
+.profile .history .memory {
+  width: 75%;
+  text-align: left;
+}
+
+/* サービス */
+.service .serviceBox {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.service .serviceBox img {
+  width: 60%;
+}
+
+/* 実績 */
+.works .websiteBox, .works .blogBox {
+  display: flex;
+  justify-content: space-around;
+}
+.works img {
+  width: 100%;
+}
+.works .link:hover {
+  opacity: .6;
+}
+.works h3 {
+  display: inline-block;
+  margin: 20px auto;
+  background: linear-gradient(transparent 70%, #f9e900 70%);
+  font-weight: bold;
+}
+.works .worksBox .item  {
+  width: 30%;
+}
+.works h5 {
+  font-weight: bold;
+  color: red;
+}
+
+/* 依頼の流れ */
+.order .orderBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.order .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 25%;
+  margin-bottom: 20px;
+}
+.order .content .item {
+  width: 80%;
+}
+.order .content p {
+  margin-top: 10px;
+}
+.order .content .fa-caret-right{
+  color: rgb(128, 128, 128);
+}
+.order .inquiry .firsticon {
+  opacity: 0;
+}
+
+/* お問い合わせ */
+.contact .inputArea {
+  width: 90%;
+  background-color: white;
+  border: 1px solid rgb(145, 145, 145);
+  border-radius: 5px;
+}
+.contact input {
+  height: 40px;
+}
+.contact .error {
+  font-size: 15px;
+}
+.contact .container {
+  width: 50%;
+}
+.contact .formGroup {
+  margin: 20px auto;
+  text-align: left;
+}
+.contact .inputarea {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid rgb(47, 47, 47);
+}
+.contact .buttonarea {
+  padding-bottom: 20px;
+}
+.contact .submit {
+  margin: 20px auto;
+}
+/* エラー表示 */
+p.error, span.error {
+  text-align: left;
+  color: red;
+}
+/* フォーム要素 (Bootstrap4 のスタイルを上書き） */
+.form-control {
+  border-radius:0;
+  background-color: #fdfdfd;
+  font-size: 14px;
+}
+.form-control:focus {
+  border-color: #aadbe8;
+  outline: 0;
+  -webkit-box-shadow: inset 0 0px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .4);
+  box-shadow: inset 0 0px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .4);
+  background-color:#fff;
+}
+/* Google Chrome, Safari, Opera 15+, Android, iOS */
+::-webkit-input-placeholder {
+  font-size: 13px;
+}
+/* Firefox 18- */
+:-moz-placeholder {
+  font-size: 13px;
+}
+/* Firefox 19+ */
+::-moz-placeholder {
+  font-size: 13px;
+}
+/* IE 10+ */
+:-ms-input-placeholder {
+  font-size: 13px;
+}
+::placeholder{
+  font-size: 13px;
+}
+textarea.form-control {
+  height: 200px;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(244, 244, 244, .8);
+}
+.footer .container {
+  display: flex;
+  justify-content: flex-start;
+  height: 40px;
+}
+.footer .copyright {
+  display: inline-block;
+  width: 100%;
+  padding-left: 20px;
+  line-height: 40px;
+  align-items: center;
+}
+.footer .copyright p {
+  line-height: 40px;
+}
+
+/* 確認画面 */
+.confirm {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 65px;
+}
+.confirm .index {
+  margin: 0 auto;
+}
+.confirm .confirmText {
+  margin: 30px auto;
+}
+.confirm .confirmText p {
+  line-height: 1.5;
+}
+.confirm .confirmBox {
+  margin: 0 auto;
+}
+.confirm .table {
+  margin: auto;
+}
+.confirm table th, .confirm table td {
+  padding: 10px;
+  font-weight: normal;
+}
+.confirm .btn-secondary {
+  background-color: rgb(3, 103, 252);
+  width: auto;
+}
+.confirm .buttonBox {
+  padding-top: 10px;
+}
+.confirm .buttonarea {
+  display: flex;
+  justify-content: center;
+}
+.confirm .action {
+  margin: auto 40px;
+}
+/* 完了ページ */
+.complete {
+  padding: 20px;
+}
+.complete p {
+  line-height: 1.5;
+}
+.complete h3 {
+  line-height: 40px;
+}

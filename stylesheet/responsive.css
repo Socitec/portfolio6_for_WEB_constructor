@@ -1,0 +1,238 @@
+.service/* タブレット向けレイアウト */
+@media all and (max-width: 1000px ) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+/* モバイル向けレイアウト */
+@media all and (max-width: 670px) {
+  /* 共通スタイル*/
+  .container {
+    width: 95%;
+  }
+  .index h2 {
+    width: 90%;
+    font-size: 25px;
+  }
+  /* ハンバーガーメニューボタン */
+  .burgerButton{
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    z-index: 20;
+    border:none;
+    float: right;
+  }
+  .bar{
+    width: 30px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+  }
+  .bar_top{
+    top: 20px;
+  }
+  .bar_mid{
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .bar_bottom{
+    bottom: 20px;
+  }
+  .burgerButton.close .bar_top{
+    transform: translate(-50%,10px) rotate(45deg);
+    transition: transform .3s;
+  }
+  .burgerButton.close .bar_mid{
+    opacity: 0;
+    transition: opacity .3s;
+  }
+  .burgerButton.close .bar_bottom{
+    transform: translate(-50%,-8px) rotate(-45deg);
+    transition: transform .3s;
+  }
+  /* ハンバーガーメニュー内スタイル */
+  .navWrapper{
+    transform: translateX(100%);
+    transition: .3s;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  .headerNav{
+    background-color:#1B1310;
+    z-index: 5;
+    width: 60%;
+    height: 65vh;
+    right: 0;
+    position: absolute;
+  }
+  .headerNav .navList{
+    display: block;
+    position: absolute;
+    top: 35vh;
+    right: -6%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .headerNav .navItem{
+    margin-right: 0;
+    display: block;
+  }
+  /* burgerButtonがクリックされ、jQueryでcloseクラスが追加された時のアクション */
+  .burgerButton .close .bar_top{
+    transform: translate(-50%,10px) rotate(45deg);
+    transition: transform .3s;
+  }
+  .burgerButton .close .bar_mid{
+    opacity: 0;
+    transition: opacity .3s;
+  }
+  .burgerButton .close .bar_bottom{
+    transform: translate(-50%,-8px) rotate(-45deg);
+    transition: transform .3s;
+  }
+  /* ハンバーガーボタンが押され、slide-in classが追加されたときのアクション */
+  .slide-in{
+    transform: translateX(0);
+    transition: .3s;
+  }
+  .headerMenu li {
+    line-height: 48px;
+  }
+
+  /*トップビュー*/
+  .topview {
+    background-image: url(../image/topview_for_sp.jpg);
+  }
+  .topview .subtitle p {
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: 6px;
+  }
+  .topview h1 {
+    width: 95%;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .largeLetter {
+    font-weight: bold;
+    font-size: 22px;
+    color: ;
+    letter-spacing: 3px;
+  }
+  .topview .limitedTime button {
+    width: 80%;
+    margin-top:;
+  }
+
+  /* 悩み */
+  .problem .issue {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+  .problem  .thinking {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .problem .thinking img {
+    height: 70vw;
+    object-fit: cover;
+  }
+  .problem .problems {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* 問題解決 */
+  .solution .solutionView img {
+    width: 90%;
+  }
+  .solution .solutions {
+    flex-direction: column;
+  }
+  .solution .solutions .item {
+    width: 90%;
+    display: inline-block;
+    margin: 5px auto;
+  }
+
+  /* プロフィール */
+  .profile .profileBox {
+    flex-direction: column;
+  }
+  .profile .profileImage {
+    width: 50%;
+  }
+  .profile .profileItems {
+    width: 90%;
+  }
+  .profile table td {
+    padding: 5px 3px;
+  }
+  .profile .history .school {
+    width: 20%;
+  }
+  .profile .history .place {
+    width: 15%;
+  }
+  .profile .history .memory {
+    width: 65%;
+  }
+
+  /* サービス */
+  .service .serviceBox {
+    flex-direction: column;
+  }
+  .service .serviceBox img {
+    width: 80%;
+  }
+  .service .serviceBox .item {
+    width: 90%;
+    margin: 5px auto;
+  }
+
+  /* 実績 */
+  .works .websiteBox, .works .blogBox {
+    flex-direction: column;
+  }
+  .works .worksBox .item  {
+    width: 90%;
+    margin: 5px auto;
+  }
+
+  /* 依頼の流れ */
+  .order .orderBox {
+    width: 90%;
+  }
+  .order .fa-caret-right {
+    font-size: 1.5em;
+  }
+  .order .content .item {
+    width: 80%;
+    padding: 10px 2px;
+  }
+  .order .item i {
+    font-size: 2em;
+  }
+  .order .content p {
+    font-size: 15px;
+  }
+
+  /* お問い合わせ */
+  .contact .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
