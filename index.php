@@ -1,0 +1,534 @@
+<!-- コンタクトフォームセット読み込み -->
+<?php require('contactform/contactform_set.php'); ?>
+<?php require './portfolio/wp-blog-header.php'; ?>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="socitec, WEB制作, ブログ, ECサイト, エンジニア, ホームページ, WEBサイト, WEBページ" />
+  <meta name="description"
+    content="WEB制作を中心にエンジニアとして活動しています。WEBページ作りたい、ECサイトに出店したい、ブログを立ち上げたい、とお考えの個人事業主の方、是非お問い合わせください。" />
+  <meta name="author" content="Yuki">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- IEでの表示崩れ防止 -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://socitec.tokyo/">
+  <meta property="og:image" content="https://socitec.tokyo/image/favicon.JPG">
+  <!-- favicon読み込み -->
+  <link rel="shortcut icon" href="image/favicon.png">
+  <!-- Viewport読み込み -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+  <!-- サムネイル読み込み -->
+  <meta name="thumbnail" content="image/preview.jpg" />
+  <!-- Reset css読み込み -->
+  <link rel="stylesheet" href="stylesheet/destyle.css">
+  <!-- Stylesheet読み込み -->
+  <link rel="stylesheet" href="stylesheet/stylesheet.css">
+  <!-- レスポンシブStylesheet読み込み -->
+  <link rel="stylesheet" href="stylesheet/responsive.css">
+  <!-- Google Fonts読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <!-- Font Awesome読み込み -->
+  <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+  <link href="../bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- 背景 -->
+  <div class="background"></div>
+  <!-- ヘッダー -->
+  <header class="header width100" id="scrollArea">
+    <div class="container width100">
+      <div class="logo">
+        <a class="goSection" href="#">
+          <img src="image/logo.png" alt="logo">
+          <p class="logoText">Socitec</p>
+        </a>
+      </div>
+      <div class="headerMenu navWrapper">
+        <nav class="headerNav">
+          <ul class="navList">
+            <a class="goSection hoverChangeColor" href="#solution">
+              <li class="navItem">提案</li>
+            </a>
+            <a class="goSection hoverChangeColor" href="#service">
+              <li class="navItem">サービス内容</li>
+            </a>
+            <a class="goSection hoverChangeColor" href="#works">
+              <li class="navItem">実績</li>
+            </a>
+            <a class="goSection hoverChangeColor" href="#profile">
+              <li class="navItem">自己紹介</li>
+            </a>
+            <a class="goSection hoverChangeColor" href="#order">
+              <li class="navItem">依頼の流れ</li>
+            </a>
+            <a class="goSection hoverChangeColor" href="#contact">
+              <li class="navItem">お問い合わせ</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- ハンバーガーメニューボタン -->
+    <div class="burgerButton">
+      <span class="bar bar_top"></span>
+      <span class="bar bar_mid"></span>
+      <span class="bar bar_bottom"></span>
+    </div>
+  </header>
+
+  <!-- トップボタン固定 -->
+  <div id="pageTop" class="topButton">
+    <p><i class="fas fa-caret-up fa-2x"></i></p>
+  </div>
+
+  <main>
+    <!-- トップ画面 -->
+    <section class="topview" id="topview">
+      <div class="container">
+        <div class="content">
+          <div class="subtitle">
+            <p class="socitec">
+              Portfolio of <span class="underline">SOCITEC-YUKI</span><br>
+              as a <span class="underline">WEBENGINEER</span>
+            </p>
+          </div>
+          <div class="top">
+            <h1>あなたの会社のWEBサイト<br>
+              <span class="underline">二人三脚で</span>育てていきます
+            </h1>
+          </div>
+          <!-- <div class="limitedTime">
+            <p>
+              1月末までにご契約の方<span class="underline largeLetter">"期間限定"</span><br>
+              公開後の修正を3か月間<br>
+              <span class="underline largeLetter">追加料金なしで</span>行います
+            </p>
+            <div class="inquiryButton">
+              <a class="goSection" href="#contact"><button class="button" type="button" name="button">まずは<span
+                    class="largeLetter">無料相談</span>の問い合わせ</button></a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 悩み -->
+    <section class="problem effectFadeIn" id="problem">
+      <div class="container">
+        <div class="index">
+          <h2>こんなお悩みありませんか？</h2>
+        </div>
+        <div class="problemBox">
+          <div class="thinking">
+            <img class="width100" src="image/thinking_man.jpg" alt="thinking_man">
+          </div>
+          <div class="problems">
+            <div class="problem1 item">
+              <p>コロナが明けたのを機に、WEBで販路を拡大したいけど、何から始めていいかわからない</p>
+            </div>
+            <div class="problem2 item">
+              <p>WEBサイトを作りたいけど、やることが多すぎてめんどうだ</p>
+            </div>
+            <div class="problem3 item">
+              <p>WEB制作に投資できる資金の余裕があまりない</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 問題解決 -->
+    <section class="solution  effectFadeIn" id="solution">
+      <div class="container">
+        <div class="index">
+          <h2>その悩み私たちで解決できます</h2>
+        </div>
+        <div class="solutionView">
+          <img src="image/meeting.jpg" alt="meeting">
+        </div>
+        <div class="solutions">
+          <div class="solution1 item">
+            <h3>お客様の悩みに丁寧に向き合って、ネット戦略を提案します</h3>
+            <p>
+              お客様へのヒアリングはもちろん、既存Webサイトのアクセス解析や、売り上げ状態の調査などの現状分析も行い、<br>
+              <span class="underline">何がお客様にとってベストか二人三脚で考えながら提案いたします。</span><br>
+              さらに、作って終わりではなく、売り上げやアクセスにつながっているか分析しながら、<span class="underline">継続的に改善提案</span>も致します。
+            </p>
+          </div>
+          <div class="solution2 item">
+            <h3>込み入った作業も代行します</h3>
+            <p>
+              WEBサイトの立ち上げなどでは、ドメイン取得やサーバーの構築など、込み入った面倒な作業が多くあります。<br>
+              そのような作業に充てる時間も人員もない、という方のために、<span class="underline">込み入った作業の代行</span>も致します。<br>
+              何でもお気軽にご相談ください。
+            </p>
+          </div>
+          <div class="solution3 item">
+            <h3>投資資金に余裕がなくても補助金を使って<br>格安プランを提案します</h3>
+            <p>
+              WEBサイトを構築したり、ECサイトを構築するには、一般的な制作会社でも数10万円必要になってきます。<br>
+              事業を始めたての方や、規模が小さい事業者の方にとっても余裕がないことが多々あります。<br>
+              そこで行政の<span class="underline">補助金</span>を使うことで、制作費用を<span
+                class="underline">従来の1/3の格安プラン</span>で作成することもできます。<br>
+            <p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- サービス -->
+    <section class="service effectFadeIn" id="service">
+      <div class="container">
+        <div class="index">
+          <h2>サービス</h2>
+        </div>
+        <div class="serviceBox">
+          <div class="website item">
+            <h3>WEBサイト制作</h3>
+            <img src="image/skills1_1.jpg" alt="Webサイト作成">
+            <h4>できること</h4>
+            <p>デザイン、コーディング、サーバー構築</p>
+            <h4>使用可能言語</h4>
+            <p>HTML、CSS、JavaScript(jQuery)、PHP</p>
+            <h4>その他</h4>
+            <p>レスポンシブ対応可、コンタクトフォーム設置可</p>
+          </div>
+          <div class="blog item">
+            <h3>ブログ立ち上げ</h3>
+            <img src="image/skills2_1.jpg" alt="ブログ立ち上げ">
+            <h4>できること</h4>
+            <p>Wordpress構築、サーバー構築、テーマ編集</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 実績 -->
+    <section class="works effectFadeIn" id="works">
+      <div class="container">
+        <div class="index">
+          <h2>WORKS</h2>
+        </div>
+        <div class="worksBox">
+          <div class="website">
+            <h3>WEBサイト制作</h3>
+            <div class="websiteBox">
+              <div class="lemonjam item">
+                <a class="link" href="https://foodidea.base.shop/">
+                  <h4>レモンジャムのECサイトのランディングページ</h4>
+                  <img src="image/works1_tabelemo_1.jpg" alt="たべれも">
+                </a>
+                <h5>関わった範囲</h5>
+                <p>ディレクション、デザイン、コーディング</p>
+                <h5>使用言語</h5>
+                <p>HTML、CSS、JavaScript(jQuery)</p>
+                <h5>力を入れた部分</h5>
+                <p>トップビューでいかに権威性のある情報を、多く、かつ、わかりやすく伝えるか考えてデザインしました。これにより、レモンジャムが安心して食べられることを、<br>
+                  印象付けることができます。
+                </p>
+                <h5>成果</h5>
+                <p>サイトを改修して2か月で、<br>
+                  1か月あたりの売り上げを7倍上げることができました。
+                </p>
+              </div>
+              <div class="clip item">
+                <a class="link" href="https://rebrighthomes.com/">
+                  <h4>不動産会社のコーポレートサイト</h4>
+                  <img src="image/works4_clip_1.jpg" alt="デザインオフィスCLIP">
+                </a>
+                <h5>関わった範囲</h5>
+                <p>コーディング</p>
+                <h5>使用言語</h5>
+                <p>HTML、CSS、JavaScript(jQuery)、PHP</p>
+                <h5>力を入れた部分</h5>
+                <p>スマホ用のレスポンシブデザインで、ボタンを指で押しやすいように配置したりと、ユーザビリティにこだわりました。
+                </p>
+              </div>
+              <div class="livevoxx item">
+                <a class="link" href="https://peraichi.com/landing_pages/view/livevoxx">
+                  <h4>音楽ポータルサイトの広告枠のランディングページ</h4>
+                  <img src="image/works2_livevoxx_1.jpg" alt="LIVEVOXX">
+                </a>
+                <h5>関わった範囲</h5>
+                <p>ディレクション、デザイン</p>
+                <h5>使用サービス</h5>
+                <p>ペライチ</p>
+                <h5>力を入れた部分</h5>
+                <p>依頼者に合計6時間ものインタビューを行い、バンドグループがどんな悩みを持っているのか、聞き取りを徹底しました。
+                </p>
+                <h5>成果</h5>
+                <p>サイトを公開して1か月で、<br>
+                  1か月あたりの問い合わせ件数が2倍に増加しました。
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="blog">
+            <h3>ブログ立ち上げ</h3>
+            <div class="blogBox">
+              <div class="greencoffee item">
+                <a class="link" href="https://socitec.tokyo/coffeestandpassion/">
+                  <h4>グリーンコーヒーの紹介ブログ</h4>
+                  <img src="image/works3_cspblog_1.jpg" alt="グリーンコーヒーブログ">
+                </a>
+                <h5>関わった範囲</h5>
+                <p>サーバー構築、ライティング、テーマ編集</p>
+                <h5>使用言語</h5>
+                <p>HTML、CSS、JavaScript(jQuery)</p>
+                <h5>力を入れた部分</h5>
+                <p>コーヒー事業の新規展開のために、何がベストか、SNSとの連携も含めて戦略を提案しました。使用するSNSやサーバーの選定など、お客様のやりたいことと、売り上げ情報などを踏まえて提案しました。
+                </p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 自己紹介 -->
+    <section class="profile  effectFadeIn" id="profile">
+      <div class="container">
+        <div class="index">
+          <h2>PROFILE</h2>
+        </div>
+        <div class="top">
+          <p class="toptext">
+            身近な困っている事業者様のために<span class="underline">IT技術で少しでも手助けしたい</span>、<br>
+            という思いでWEB制作を中心にエンジニアとして活動しています。
+          </p>
+        </div>
+
+        <div class="profileBox">
+          <div class="profileImage">
+            <img class="profilePhoto width100" src="image/profilephoto.jpg" alt="自己紹介画像">
+          </div>
+          <div class="profileItems">
+            <div class="hobby">
+              <h3>趣味</h3>
+              <ul>
+                <li>
+                  <h4>ポップコーン作り</h4>
+                  ポップコーンを自分で作るのが好きで、これまで200通り以上味付けを試してきました。<br>
+                  意外と美味しかったのは、高麗人参と抹茶粉末を混ぜたものです。<br>
+                  あなたに最適なポップコーンをアレンジできますよ！！
+                </li>
+                <li>
+                  <h4>ポケモンバトル</h4>
+                  Nitendo Switchのポケモンソード＆シールドで、ポケモンを育成してネット対戦をやっています。
+                </li>
+              </ul>
+            </div>
+            <div class="history">
+              <h3>これまでの歩み</h3>
+              <table border="1" bordercolor="#616161">
+                <tr>
+                  <td class="school">小学校</td>
+                  <td class="place">岡山</td>
+                  <td class="memory">田舎の田んぼでひたすら昆虫採取していました</td>
+                </tr>
+                <tr>
+                  <td class="school">中学校</td>
+                  <td class="place">岡山</td>
+                  <td class="memory">部活で環境問題に取り組み、川の水質調査をしていました</td>
+                </tr>
+                <tr>
+                  <td class="school">高校</td>
+                  <td class="place">岡山</td>
+                  <td class="memory">土日関係なく受験勉強Onlyの日々でした</td>
+                </tr>
+                <tr>
+                  <td class="school">大学</td>
+                  <td class="place">大阪</td>
+                  <td class="memory">サークルで競技ダンス、アルバイトで化学実験の授業、生化学の研究など、様々な経験をしました</td>
+                </tr>
+                <tr>
+                  <td class="school">社会人</td>
+                  <td class="place">愛知</td>
+                  <td class="memory">化学メーカーで、高強力繊維の新製品開発をしています</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 依頼までの流れ -->
+    <section class="order effectFadeIn" id="order">
+      <div class="container">
+        <div class="index">
+          <h2>依頼の流れ</h2>
+        </div>
+        <div class="orderBox">
+          <div class="inquiry content">
+            <i class="fas fa-caret-right fa-4x firsticon"></i>
+            <div class="item">
+              <i class="fas fa-envelope-open-text fa-4x"></i>
+              <p>問合わせ</p>
+            </div>
+          </div>
+          <div class="meeting content">
+            <i class="fas fa-caret-right fa-4x"></i>
+            <div class="item">
+              <i class="fas fa-laptop fa-4x"></i>
+              <p>Zoom面談</p>
+            </div>
+          </div>
+          <div class="quotation content">
+            <i class="fas fa-caret-right fa-4x"></i>
+            <div class="item">
+              <i class="fas fa-file-invoice fa-4x"></i>
+              <p>見積もり</p>
+            </div>
+          </div>
+          <div class="order content">
+            <i class="fas fa-caret-right fa-4x"></i>
+            <div class="item">
+              <i class="fas fa-handshake fa-4x"></i>
+              <p>依頼</p>
+            </div>
+          </div>
+          <div class="work content">
+            <i class="fas fa-caret-right fa-4x"></i>
+            <div class="item">
+              <i class="fas fa-keyboard fa-4x"></i>
+              <p>作業</p>
+            </div>
+          </div>
+          <div class="submit content">
+            <i class="fas fa-caret-right fa-4x"></i>
+            <div class="item">
+              <i class="fas fa-file-code fa-4x"></i>
+              <p>納品</p>
+            </div>
+          </div>
+          <div class="check content">
+            <i class="fas fa-caret-right fa-4x"></i>
+            <div class="item">
+              <i class="fas fa-tasks fa-4x"></i>
+              <p>検収</p>
+            </div>
+          </div>
+          <div class="pay content">
+            <i class="fas fa-caret-right fa-4x"></i>
+            <div class="item">
+              <i class="fas fa-money-check-alt fa-4x"></i>
+              <p>支払い</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- お問い合わせフォーム -->
+    <section class="contact effectFadeIn" id="contact">
+      <div class="container">
+        <div class="index">
+          <h2>お問い合わせフォーム</h2>
+        </div>
+        <p>以下のフォームからお問い合わせください。</p>
+        <form id="main_contact" method="post" action="confirm.php">
+          <div class="formGroup">
+            <label for="name">お名前（必須）
+              <span class="error">
+                <?php echo h($error_name); ?>
+              </span>
+            </label><br>
+            <input type="text" class="form-control validate max50 required inputarea" id="name" name="name"
+              placeholder="氏名" value="">
+          </div>
+          <div class="formGroup">
+            <label for="email">Email（必須）
+              <span class="error">
+                <?php echo h($error_email); ?>
+              </span>
+            </label><br>
+            <input type="text" class="form-control validate mail required inputarea" id="email" name="email"
+              placeholder="Email アドレス" value="">
+          </div>
+          <div class="formGroup">
+            <label for="email_check">Email（確認用 必須）
+              <span class="error">
+                <?php echo h($error_email_check); ?>
+              </span>
+            </label><br>
+            <input type="text" class="form-control validate email_check required inputarea" id="email_check"
+              name="email_check" placeholder="Email アドレス（確認のためもう一度ご入力ください。）" value="">
+          </div>
+          <div class="formGroup">
+            <label for="tel">お電話番号（半角英数字）
+              <span class="error">
+                <?php echo h($error_tel); ?>
+              </span>
+              <span class="error">
+                <?php echo h($error_tel_format); ?>
+              </span>
+            </label><br>
+            <input type="text" class="validate max30 tel form-control inputarea" id="tel" name="tel" value=""
+              placeholder="お電話番号（半角英数字でご入力ください）">
+          </div>
+          <div class="formGroup">
+            <label for="subject">件名（必須）
+              <span class="error">
+                <?php echo h($error_subject); ?>
+              </span>
+            </label><br>
+            <input type="text" class="form-control validate max100 required inputarea" id="subject" name="subject"
+              placeholder="件名" value="">
+          </div>
+          <div class="formGroup">
+            <label for="body">お問い合わせ内容（必須）
+              <span class="error">
+                <?php echo h($error_body); ?>
+              </span>
+            </label>
+            <span id="count"> </span>/1000<br>
+            <textarea class="form-control validate max1000 required inputarea" id="body" name="body"
+              placeholder="お問い合わせ内容（1000文字まで）をお書きください" rows="3"></textarea>
+          </div>
+          <div class="buttonarea">
+            <button type="submit" class="button btn-primary">確認画面へ</button>
+          </div>
+          <!--確認ページへトークンをPOSTする、隠しフィールド「ticket」-->
+          <input type="hidden" name="ticket" value="<?php echo h($ticket); ?>">
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <img src="image/logo.png" alt="logo">
+      <div class="copyright">
+        <p>
+          © 2021 socitec
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Javascript読み込み -->
+  <!-- jQuery読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- 自作javascriptの読み込み -->
+  <script src="script/script.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KE03YVVPMW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-KE03YVVPMW');
+  </script>
+</body>
+
+</html>
